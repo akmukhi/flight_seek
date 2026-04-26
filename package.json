@@ -1,0 +1,36 @@
+{
+  "name": "flight_seek",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "db:migrate": "tsx scripts/db/migrate.ts",
+    "db:import:ourairports": "tsx scripts/db/import-ourairports.ts"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "next": "16.2.2",
+    "pg": "^8.16.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "server-only": "^0.0.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/pg": "^8.15.5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.5",
+    "typescript": "^5"
+  }
+}
